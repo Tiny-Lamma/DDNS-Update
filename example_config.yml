@@ -1,0 +1,8 @@
+---
+account-id: c7a6f19ed7621c2d96da7688a1f98a2a
+api-token: 8MeHMyeWsSN-jDrU2oRY5_M5ccoWCQHG33Qr-9f6
+debug: False
+dynamic-domain: wan.example.com
+dynamic-dns-zone: example.com
+quiet: False
+update-time: 120
