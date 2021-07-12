@@ -7,6 +7,13 @@ config.yml
 # Bind Exports
 *.txt
 
+# Builds
+build/
+*.exe
+
+vcs.xml
+
+# venu
 venv/
 
 # User-specific stuff
