@@ -184,7 +184,7 @@ def delete_dns_record(
 
 
 def import_dns_records(
-        authenication_header: dict,
+        authentication_header: dict,
         zone_id: str,
         zone_file: str,
         proxied: bool = False,
@@ -196,7 +196,7 @@ def import_dns_records(
     url = 'https://api.cloudflare.com/client/v4/zones/{0}/dns_records/import'.format(zone_id)
     json_response = json.loads(requests.post(
         url=url,
-        headers=authenication_header,  # first item only, removed content-type
+        headers=authentication_header,  # first item only, removed content-type
         files={'file': open(file=zone_file, mode='rb').read(), 'proxied':  proxied}
     ).text)
 
